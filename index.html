@@ -6,12 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Swift</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="hero">
+    <div class="herosection">
+        <h2>BUREKOBEMA</h2>
+        <div class="content">
+            <div>
+                <h3>"im bleck n beck. i tuk <br> care of osama n now i <br> will tek care of boden <br> n tremp</h3>
+                <div class="buttons">
+                    <button class="text-button">Buy on <br> Raydium </button>
+                    <button class="img-button">
+                        <img src="/assets/x.png" alt="x" class="x-img">
+                    </button>
+                    <button class="img-button">
+                        <img src="/assets/dextools.svg" alt="x" class="x-img">
+                    </button>
+                    <button class="img-button">
+                        <img src="/assets/telegram.svg" alt="x" class="x-img">
+                    </button>
+                </div>
+            </div>
+            <img src="assets/pic-one.webp" alt="pic" class="pic-one" />
+        </div>
+    </div>
 
+    <div class="section-two">
+        <div class="content">
+            <div class="tenor-gif-embed" data-postid="14825626" data-share-method="host" data-aspect-ratio="1.03226" data-width="100%" data-height="400px"><a href="https://tenor.com/view/taylor-swift-reactions-taylor-swift-dance-dance-off-reaction-gif-14825626">Taylor Swift Reactions Dance Sticker</a>from <a href="https://tenor.com/search/taylor+swift+reactions-stickers">Taylor Swift Reactions Stickers</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <div class="button-container">
+                <div class="button">
+                    <div class="subcontent">
+                        <p>TOTAL SUPPLY:</p>
+                        <span>1,000,000,000</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="subcontent">
+                        <p>TAX:</p>
+                        <span>0/0</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="subcontent">
+                        <p>CONTRACT ADDRESS:</p>
+                        <span>BMQZzVJa1X5cBYc8fCRVbWuFC4czA1s5GE3HekWfuhjz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-three">
+        <div class="content">
+            <div>
+                <h2>"I lik it her, i <br> WaNd Tu bi bak <br> hmppff...</h2>
+                <br>
+                <span>- Taylor Swift</span>
+            </div>
+            <img src="assets/pic-one.webp" alt="pic" class="pic-one" />
+        </div>
+    </div>
+
+    <div class="section-four">
+        <div class="content">
+            <h2>HOW TO BUY</h2>
+
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Install Phantom</h3>
+                    <div class="accordion-content">
+                        <p>This is the content for installing Phantom.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Buy Solana</h3>
+                    <div class="accordion-content">
+                        <p>This is the content for buying Solana.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Buy Ethereum</h3>
+                    <div class="accordion-content">
+                        <p>This is the content for buying Ethereum.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Buy BUREK!</h3>
+                    <div class="accordion-content">
+                        <p>This is the content for buying BUREK!</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="text-button">Buy on Raydium</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="buttons">
+            <button class="img-button">
+                <img src="/assets/x.png" alt="x" class="x-img">
+            </button>
+            <button class="img-button">
+                <img src="/assets/dextools.svg" alt="x" class="x-img">
+            </button>
+            <button class="img-button">
+                <img src="/assets/telegram.svg" alt="x" class="x-img">
+            </button>
+        </div>
+
+        <p>Please be advised that Burek Obema Memecoin is a cryptocurrency created for entertainment purposes and is not affiliated with or endorsed by Barack Obama. While Burek Obema Memecoin may reference or incorporate elements related to Obama’s persona,
+            image, or likeness, it does not imply any direct endorsement, partnership, or approval by Barack Obama. Any resemblance or association between Burek Obema Memecoin and Barack Obama is purely coincidental and intended for satirical or humorous
+            purposes.
+        </p>
+        <div class="copyright">
+            <p>2024 Burek Obema | All Rights Reserved</p>
+        </div>
     </div>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener("click", function() {
+                const accordionItem = this.parentElement;
+                const accordionContent = accordionItem.querySelector(".accordion-content");
+
+                // Toggle active class on content
+                accordionContent.classList.toggle("active");
+
+                // Toggle active class on header
+                this.classList.toggle("active");
+            });
+        });
+    });
+</script>
 
 </html>

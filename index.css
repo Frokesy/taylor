@@ -1,5 +1,276 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* font-family: 'Slackey', sans-serif; */
+    
+    .herosection {
+        position: relative;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    
+    .herosection::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(171, 97, 122, 0.9), rgba(0, 0, 0, 0.6)), url('assets/white-house.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .herosection h2 {
+        font-size: 60px;
+        text-shadow: 0px 0px 10px #1a4497;
+        font-family: 'Grandstander', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .herosection .content {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 0 auto;
+        min-height: 100vh;
+        align-items: center;
+        padding-top: 10vh;
+        font-size: 40px;
+        text-shadow: 0px 0px 10px #FD0000;
+        font-family: 'Grandstander', sans-serif;
+        font-weight: 900
+    }
+    
+    .herosection .content span {
+        margin-top: 50px;
+    }
+    
+    .herosection .content .pic-one {
+        width: 500px;
+    }
+    
+    .x-img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    button {
+        margin-right: 20px;
+        background: #FD0000;
+        font-family: 'Slackey', sans-serif;
+        color: #fff;
+    }
+    
+    .text-button {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 15px 40px;
+        border-radius: 15px;
+    }
+    
+    .img-button {
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+    
+    .section-two,
+    .section-four {
+        position: relative;
+        min-height: 80vh;
+        z-index: 1;
+    }
+    
+    .section-two::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('assets/flag.webp');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .section-two .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    
+    .section-two .content .pic-one {
+        width: 200px;
+    }
+    
+    .section-two .content .button-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    
+    .section-two .content .button {
+        background: url(/assets/flag.webp);
+        background-repeat: no-repeat;
+        color: #fff;
+        margin-top: 20px
+    }
+    
+    .subcontent {
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+        font-size: 22px;
+        font-weight: 900;
+        font-family: 'Slackey', sans-serif;
+    }
+    
+    .section-three {
+        position: relative;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    
+    .section-three::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(26, 68, 151, 0.9), rgba(0, 0, 0, 0.6)), url('assets/white-house.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .section-three .content {
+        color: #fff;
+        display: flex;
+        width: 70vw;
+        margin: 0 auto;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10vh;
+        font-size: 40px;
+        text-shadow: 0px 0px 10px #FD0000;
+        font-family: 'Grandstander', sans-serif;
+        font-weight: 900
+    }
+    
+    .section-three .content span {
+        margin-top: 50px;
+    }
+    
+    .section-three .content .pic-one {
+        width: 620px;
+    }
+    
+    .section-four::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(253, 0, 0, 0.7)), url('assets/flag.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .section-four .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 50vh;
+        padding-top: 20vh;
+        color: #fff;
+    }
+    
+    .section-four h2 {
+        font-size: 60px;
+        text-shadow: 0px 0px 10px #1a4497;
+        font-family: 'Grandstander', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .accordion-container {
+        width: 40vw
+    }
+    
+    .accordion-container .button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .accordion-item {
+        border-bottom: 2px solid #fff;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    
+    .accordion-item h3 {
+        font-family: 'Slackey', sans-serif;
+        font-size: 24px;
+    }
+    
+    .accordion-content {
+        display: none;
+    }
+    
+    .accordion-content.active {
+        display: block;
+    }
+    
+    .footer {
+        background-color: #1a4497;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer p {
+        width: 35vw;
+        font-family: 'Grandstander', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 2;
+        font-weight: 100;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    
+    .copyright {
+        border-top: 2px solid #fff;
+    }
