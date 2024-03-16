@@ -3,7 +3,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-    /* font-family: 'Slackey', sans-serif; */
     
     .herosection {
         position: relative;
@@ -18,9 +17,8 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(rgba(171, 97, 122, 0.9), rgba(0, 0, 0, 0.6)), url('assets/white-house.jpeg');
+        background: linear-gradient(rgba(171, 97, 122, 0.9), rgba(0, 0, 0, 0.6)), url('assets/hero.jpg');
         background-attachment: fixed;
-        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
@@ -49,6 +47,14 @@
         text-shadow: 0px 0px 10px #FD0000;
         font-family: 'Grandstander', sans-serif;
         font-weight: 900
+    }
+    
+    .herosection .content .mobile {
+        display: none;
+    }
+    
+    .herosection .content .desktop {
+        display: block;
     }
     
     .herosection .content span {
@@ -131,7 +137,7 @@
         background: url(/assets/flag.webp);
         background-repeat: no-repeat;
         color: #fff;
-        margin-top: 20px
+        margin-top: 20px;
     }
     
     .subcontent {
@@ -273,4 +279,78 @@
     
     .copyright {
         border-top: 2px solid #fff;
+    }
+    
+    @media screen and (max-width: 720px) {
+        .herosection .content,
+        .section-two .content,
+        .section-three .content {
+            width: 90vw;
+            font-size: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons {
+            display: none;
+            visibility: hidden;
+            width: 100%;
+        }
+        .buttons .mobile {
+            display: flex;
+        }
+        .mobile .text-button {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .img-button-mobile {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+        }
+        .herosection .content .pic-one,
+        .section-three .content .pic-one {
+            width: 90vw;
+        }
+        .herosection .content .mobile {
+            display: block;
+            padding-bottom: 20px;
+        }
+        .herosection .content .desktop {
+            display: none;
+        }
+        .section-two .content {
+            padding-top: 20vh;
+            flex-direction: column-reverse;
+        }
+        .section-two,
+        .section-four {
+            position: relative;
+            min-height: 100vh;
+            z-index: 1;
+        }
+        .section-two .content .button {
+            background: url(/assets/flag.webp);
+            width: 95vw;
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+            color: #fff;
+            margin-top: 40px;
+        }
+        .subcontent {
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 5px;
+            font-size: 12px;
+            font-weight: 900;
+            font-family: 'Slackey', sans-serif;
+        }
+        .footer p {
+            width: 90vw;
+        }
+        .accordion-container {
+            width: 90vw;
+        }
     }
